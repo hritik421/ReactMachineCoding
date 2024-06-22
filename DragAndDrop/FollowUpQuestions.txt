@@ -1,0 +1,22 @@
+Q1: How would you handle a scenario where you need to save the state of these lists to a backend?
+Ans: To save the state to a backend, we could use an effect hook (`useEffect`) to trigger an API call whenever the state changes.
+This could involve sending a POST or PUT request with the updated items to the server. Additionally, we could debounce the 
+API calls to avoid excessive requests during rapid drag-and-drop actions.
+
+Q2: How would you optimize the performance if the lists had hundreds of items?
+Ans: For large lists, we could optimize performance by using virtualization libraries like `react-window` or `react-virtualized`
+to only render the visible items. This reduces the number of DOM nodes and improves rendering performance. 
+We could also debounce or throttle the drag-and-drop events to minimize unnecessary re-renders.
+
+Q3: What would happen if an item fails to move from one list to another due to a network issue?
+Ans: In a real-time collaborative application, we could implement optimistic updates, where the UI updates immediately and 
+reverts back if the server request fails. For the current implementation, we could show an error message and 
+attempt to retry the operation or revert the state to its previous state.
+
+Q4: How would you implement a feature to allow multi-select drag-and-drop?
+Ans: To implement multi-select drag-and-drop, we could maintain an array of selected items and update it based on user 
+interactions (e.g., holding the Shift or Ctrl key while clicking items). During the drag-and-drop operation, 
+we would handle the selected items as a group and update the state accordingly.
+
+
+
