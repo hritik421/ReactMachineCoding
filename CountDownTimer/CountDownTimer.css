@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.countdown-timer {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.timer-display {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.time-input {
+  margin-top: 20px;
+}
+
+.time-input label {
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+.time-input input {
+  width: 50px;
+  padding: 5px;
+  font-size: 1em;
+  text-align: center;
+}
